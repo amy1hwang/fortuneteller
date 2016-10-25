@@ -13,41 +13,79 @@
         <h1>Find Your Fortune</h1>
       </div>
       <form id="questions">
-        <div class="row">
-          <div class="col-md-6">
-              <h4>Which of the following lucky events happened to you recently (check all that apply)?</h4>
-              <input type="checkbox" name="question" value="lucky">Finding money<br>
-              <input type="checkbox" name="question" value="lucky">Seeing a four-leaf clover<br>
-              <input type="checkbox" name="question" value="lucky">Get something for free<br>
-              <input type="checkbox" name="question" value="lucky">Seeing a Rainbow<br>
+        <div class="checkbox">
+          <div class="row">
+            <div class="col-md-6">
+                <h4>Which of the following lucky events happened to you recently (check all that apply)?</h4>
+                <label>
+                  <input type="checkbox" name="question" value="lucky">Finding money
+                </label><br>
+                <label>
+                  <input type="checkbox" name="question" value="lucky">Seeing a four-leaf clover
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="question" value="lucky">Get something for free
+                </label><br>
+                <label>
+                  <input type="checkbox" name="question" value="lucky">Seeing a Rainbow
+                </label><br>
+            </div>
+            <div class="col-md-6">
+                <h4>Which of the following unlucky events happened to you recently (check all that apply)?</h4>
+                <label>
+                  <input type="checkbox" name="question" value="unlucky">Seeing a black cat
+                </label><br>
+                <label>
+                  <input type="checkbox" name="question" value="unlucky">Walking under a latter
+                </label><br>
+                <label>
+                  <input type="checkbox" name="question" value="unlucky">Stubbing your toe
+                </label><br>
+                <label>
+                  <input type="checkbox" name="question" value="unlucky">Loosing you keys
+                </label><br>
+            </div>
           </div>
-          <div class="col-md-6">
-              <h4>Which of the following unlucky events happened to you recently (check all that apply)?</h4>
-              <input type="checkbox" name="question" value="unlucky">Seeing a black cat<br>
-              <input type="checkbox" name="question" value="unlucky">Walking under a latter<br>
-              <input type="checkbox" name="question" value="unlucky">Stubbing your toe<br>
-              <input type="checkbox" name="question" value="unlucky">Loosing you keys<br>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-              <h4>Which of the following item do you own (check all that apply)?</h4>
-              <input type="checkbox" name="question" value="lucky">Horse Shoes<br>
-              <input type="checkbox" name="question" value="lucky">Two dollar-bill<br>
-              <input type="checkbox" name="question" value="lucky">Unicorn<br>
-              <input type="checkbox" name="question" value="lucky">Golden coins<br>
-          </div>
-          <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+                <h4>Which of the following item do you own (check all that apply)?</h4>
+                <label>
+                  <input type="checkbox" name="question" value="lucky">Horse Shoes
+                </label><br>
+                <label>
+                  <input type="checkbox" name="question" value="lucky">Two dollar-bill
+                </label><br>
+                <label>
+                  <input type="checkbox" name="question" value="lucky">Unicorn
+                </label><br>
+                <label>
+                  <input type="checkbox" name="question" value="lucky">Golden coins
+                </label><br>
+            </div>
+            <div class="col-md-6">
               <h4>Which of the following items are you interested in (check all that applay)?</h4>
-              <input type="checkbox" name="question" value="unlucky">Black cat<br>
-              <input type="checkbox" name="question" value="unlucky">The number thirteen<br>
-              <input type="checkbox" name="question" value="unlucky">A raven<br>
-              <input type="checkbox" name="question" value="unlucky">Ouija board<br>
+              <label>
+                <input type="checkbox" name="question" value="unlucky">Black cat
+              </label><br>
+              <label>
+                <input type="checkbox" name="question" value="unlucky">The number thirteen
+              </label><br>
+              <label>
+                <input type="checkbox" name="question" value="unlucky">A raven
+              </label><br>
+              <label>
+                <input type="checkbox" name="question" value="unlucky">Ouija board
+              </label><br>
+            </div>
           </div>
         </div>
-        <button type="submit" class="btn-primary btn">submit</button>
-      </form>
-      <div class="output"></div>
+          <button type="submit" class="btn-primary btn">submit</button>
+          <br>
+        </form>
+      <div class="jumbotron" id="output">
+        <h3 id="fortune"></h3>
+      </div>
     </div>
   </body>
 </html>
