@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Fortune Teller</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Find Your Fortune</h1>
+      </div>
+      <form id="questions">
+        <div class="row">
+          <div class="col-md-6">
+              <h4>Which of the following lucky events happened to you recently (check all that apply)?</h4>
+              <input type="checkbox" name="question" value="lucky">Finding money<br>
+              <input type="checkbox" name="question" value="lucky">Seeing a four-leaf clover<br>
+              <input type="checkbox" name="question" value="lucky">Get something for free<br>
+              <input type="checkbox" name="question" value="lucky">Seeing a Rainbow<br>
+          </div>
+          <div class="col-md-6">
+              <h4>Which of the following unlucky events happened to you recently (check all that apply)?</h4>
+              <input type="checkbox" name="question" value="unlucky">Seeing a black cat<br>
+              <input type="checkbox" name="question" value="unlucky">Walking under a latter<br>
+              <input type="checkbox" name="question" value="unlucky">Stubbing your toe<br>
+              <input type="checkbox" name="question" value="unlucky">Loosing you keys<br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+              <h4>Which of the following item do you own (check all that apply)?</h4>
+              <input type="checkbox" name="question" value="lucky">Horse Shoes<br>
+              <input type="checkbox" name="question" value="lucky">Two dollar-bill<br>
+              <input type="checkbox" name="question" value="lucky">Unicorn<br>
+              <input type="checkbox" name="question" value="lucky">Golden coins<br>
+          </div>
+          <div class="col-md-6">
+              <h4>Which of the following items are you interested in (check all that applay)?</h4>
+              <input type="checkbox" name="question" value="unlucky">Black cat<br>
+              <input type="checkbox" name="question" value="unlucky">The number thirteen<br>
+              <input type="checkbox" name="question" value="unlucky">A raven<br>
+              <input type="checkbox" name="question" value="unlucky">Ouija board<br>
+          </div>
+        </div>
+        <button type="submit" class="btn-primary btn">submit</button>
+      </form>
+      <div class="output"></div>
+    </div>
+  </body>
+</html>
